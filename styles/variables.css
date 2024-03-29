@@ -1,1 +1,30 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /** dark theme **/
+    --dark-main-color : #00CC14;
+    --dark-bg-color : #000;
+
+    /** light theme **/
+    --light-main-color : #000;
+    --light-bg-color : #fff;
+
+    /** fonts **/
+    --font-press-start : "Press Start 2P";
+    --font-inter : "Inter";
+
+    --fw-normal : 400;
+    --fw-bold : 700;
+
+    --font-size-s: 14px;
+    --font-line-s : auto;
+    --font-start-s: var(--fw-normal) var(--font-size-s) / var(--font-line-s) var(--font-press-start);
+
+    --font-size-l: 14px;
+    --font-line-l : auto;
+    --font-start-l: var(--fw-normal) var(--font-size-l) / var(--font-line-l) var(--font-press-start);
+
+    --font-size-xl: 49px;
+    --font-line-xl: normal;
+    --font-start-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-press-start);
+
+    --max-width: 700px;
+}
