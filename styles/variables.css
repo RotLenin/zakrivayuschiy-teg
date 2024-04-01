@@ -26,5 +26,15 @@
     --font-line-xl: normal;
     --font-start-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-press-start);
 
+    --font-inter-size-s: 18px;
+    --font-inter-line-s: 21px;
+    --font-inter-s: var(--font-inter-size-s) / var(--font-inter-line-s) var(--font-inter);
+
+    --font-inter-size-l: 18px;
+    --font-inter-line-l: 21px;
+    --font-inter-l: var(--font-inter-size-l) / var(--font-inter-line-l) var(--font-inter);
+
+    /** sizes **/
     --max-width: 700px;
+    --width: min(100%, var(--max-width));
 }

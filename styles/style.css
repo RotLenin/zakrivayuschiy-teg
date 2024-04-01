@@ -1,4 +1,5 @@
 @import "header.css";
+@import "section.css";
 
 
 /* Здесь вы напишете основную часть стилей страницы.
@@ -27,4 +28,10 @@
   align-items: center;
   padding-top: 100px;
   gap: 100px;
+
+  background-color: var(--background);
+}
+
+.main {
+  width: 100%;
 }
