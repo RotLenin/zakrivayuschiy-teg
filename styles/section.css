@@ -35,6 +35,34 @@
     gap: 27px;
 }
 
+.section__context-buttons {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.section__context-like {
+
+}
+
+.section__context-like > path {
+    fill : var(--mainColor);
+}
+
+.section__context-btn {
+    padding: 9px 17px;
+    font: var(--font-start-s);
+    width: 130px;
+}
+
+.section__context-buttons:hover .section__context-btn {
+    color: var(--background);
+    box-shadow: inset 130px 0 0 0 var(--mainColor);
+    transition: box-shadow 500ms, color 500ms;
+}
+
 .section__paragraph {
     font: var(--font-inter-s);
     font-variation-settings: var(--font-variation-settings-s);

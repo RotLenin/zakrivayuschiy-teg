@@ -15,12 +15,12 @@
     --fw-bold : 700;
 
     --font-size-s: 14px;
-    --font-line-s : auto;
-    --font-start-s: var(--fw-normal) var(--font-size-s) / var(--font-line-s) var(--font-press-start);
+    --font-line-s : normal;
+    --font-start-s: var(--font-size-s) / var(--font-line-s) var(--font-press-start);
 
     --font-size-l: 14px;
-    --font-line-l : auto;
-    --font-start-l: var(--fw-normal) var(--font-size-l) / var(--font-line-l) var(--font-press-start);
+    --font-line-l : normal;
+    --font-start-l: var(--font-size-l) / var(--font-line-l) var(--font-press-start);
 
     --font-size-xl: 49px;
     --font-line-xl: normal;

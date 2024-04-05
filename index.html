@@ -17,7 +17,7 @@
     <header class="header">
       <div class='header__logo-group'>
         <h1 class='header__title'>&#60;/HTML&#62;</h1>
-        <p>ЗАКРЫВАЮЩИй ТЕГ</p>
+        <p class='header__subtitle'>ЗАКРЫВАЮЩИй ТЕГ</p>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -60,17 +60,21 @@
             <p class='section__paragraph'>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class='section__context-buttons'>
-            <span>icon</span>
-            <button>Like</button>
+            <svg class='section__context-like' width='27px' height='24px' viewBox="0 0 27 24" xmlns="http://www.w3.org/2000/svg">
+              <use href='./svg/heart.svg#heart'></use>
+            </svg>
+            <button class='button section__context-btn'>Like</button>
           </div>
         </div>
 
       </section>
     </main>
     <footer class='footer'>
-      <button class='footer__btn'>
-        <img class='footer__btn-icon'/>
-        <span class='footer__btn-label'>Сохранить на память</span>
+      <button class='button footer__btn'>
+        <svg class='footer__btn-icon' width='28px' height='28px' viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class='footer__btn-label'>Сохранить на память</p>
       </button>
     </footer>
     <script src="./scripts/set-theme.js"></script>

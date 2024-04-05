@@ -1,5 +1,6 @@
 @import "header.css";
 @import "section.css";
+@import "footer.css";
 
 
 /* Здесь вы напишете основную часть стилей страницы.
@@ -27,11 +28,16 @@
   justify-content: flex-start;
   align-items: center;
   padding-top: 100px;
-  gap: 100px;
+  gap: 50px;
 
   background-color: var(--background);
 }
 
 .main {
-  width: 100%;
+  width: var(--width);
+}
+
+.button {
+  background: transparent;
+  border: var(--border);
 }
