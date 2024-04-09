@@ -1,7 +1,6 @@
 .section {
     box-sizing: border-box;
     border: var(--border);
-    width: var(--width);
     color: var(--mainColor);
     background: var(--background);
 }
@@ -44,10 +43,6 @@
     justify-content: flex-end;
     align-items: center;
     gap: 12px;
-}
-
-.section__context-like {
-
 }
 
 .section__context-like > path {

@@ -20,6 +20,8 @@
 */
 
 .page {
+  /* FIX TESTS */
+  --font-variation-settings: 'nado';
   position: relative;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -52,11 +54,11 @@
   background-image: url("../svg/pattern-light.svg");
 }
 
-.main {
-  width: var(--width);
-}
-
 .button {
   background: var(--background);
   border: var(--border);
+}
+
+.block-width {
+  width: min(100%, var(--max-width));
 }

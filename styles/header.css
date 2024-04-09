@@ -2,8 +2,6 @@
     padding: 25px 16px;
     margin-bottom: 50px;
     position: relative;
-    width: min(100%, var(--max-width));
-    /* min-height: clamp(323px, 50vh,368px) */;
     min-height: 323px;
     border: var(--border);
     background-color: var(--background);
@@ -93,7 +91,6 @@
 .theme-menu__button:focus,
 .theme-menu__button:active,
 .theme-menu__button:focus-within,
-.theme-menu__button:active,
 .theme-menu__button:hover,
 .theme-menu__button:focus::before,
 .theme-menu__button:active::before,
