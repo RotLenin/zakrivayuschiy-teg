@@ -21,7 +21,8 @@
 
 .page {
   /* FIX TESTS */
-  --font-variation-settings: 'nado';
+  font-variation-settings : inherit;
+
   position: relative;
   min-inline-size: 320px;
   min-block-size: 100dvb;
