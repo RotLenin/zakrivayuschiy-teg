@@ -3,6 +3,7 @@
     border: var(--border);
     width: var(--width);
     color: var(--mainColor);
+    background: var(--background);
 }
 
 .section__title {
@@ -16,6 +17,8 @@
 }
 
 .section__img img {
+    border-top: var(--border);
+    border-bottom: var(--border);
     width: 100%;
 }
 
