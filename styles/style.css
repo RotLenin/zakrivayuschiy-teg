@@ -21,7 +21,7 @@
 
 .page {
   /* FIX TESTS */
-  font-variation-settings : inherit;
+  font-variation-settings : "wght" 465;
 
   position: relative;
   min-inline-size: 320px;
