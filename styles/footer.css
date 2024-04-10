@@ -18,6 +18,11 @@
     gap: 8px;
 }
 
+.footer .footer__btn:hover {
+    /* Проблема с размером, придумать динамический вариант */
+    box-shadow: inset 335px 0 0 0 var(--mainColor);
+}
+
 @media (width >= 400px) {
     .footer__btn {
         flex-direction: row;

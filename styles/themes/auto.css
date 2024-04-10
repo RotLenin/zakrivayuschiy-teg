@@ -1,0 +1,9 @@
+.page, .page.theme_auto {
+    --mainColor : var(--dark-main-color);
+    --background : var(--dark-bg-color);
+
+    --border: 2px solid var(--mainColor);
+
+    --font-variation-settings-s: "wght" 465;
+    --font-variation-settings-l: "wght" 765;
+}

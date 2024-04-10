@@ -2,27 +2,30 @@
     padding: 25px 16px;
     margin-bottom: 50px;
     position: relative;
-    min-height: 323px;
     border: var(--border);
     background-color: var(--background);
     color: var(--mainColor);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    gap: 25px;
 }
 
+/* эта тема должна быть посередине, проще паддинга сложно что то придумать */
 .header__logo-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    padding-top: 98px;
 }
 
 .header__title {
     font: var(--font-start-xl);
+    line-height: 78%;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.header__title a {
+    text-decoration: none;
 }
 
 .header__subtitle {
@@ -30,8 +33,6 @@
 }
 
 .header__theme-menu {
-    position: absolute;
-    bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,12 +67,13 @@
 }
 
 .theme-menu__button::before {
+    position: relative;
     content: '▶';
-    position: absolute;
-    bottom: 0;
     opacity: 0;
-    left: -20px;
     color: var(--mainColor);
+    animation: arrow-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
 }
 
 .theme-menu__button::after {
@@ -94,7 +96,8 @@
 .theme-menu__button:hover,
 .theme-menu__button:focus::before,
 .theme-menu__button:active::before,
-.theme-menu__button:focus-within::before {
+.theme-menu__button:focus-within::before,
+.theme-menu__button[disabled]::before {
     opacity: .5;
 }
 

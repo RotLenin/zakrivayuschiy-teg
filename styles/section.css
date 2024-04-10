@@ -22,7 +22,8 @@
 }
 
 .section__context {
-    padding: 25px;
+    /* Pixel perfect fix */
+    padding: 22px 25px 25px 25px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -45,8 +46,36 @@
     gap: 12px;
 }
 
-.section__context-like > path {
+.section__context-like .sparks {
+    opacity: 0;
     fill : var(--mainColor);
+}
+
+.section__context-like .core {
+    fill : none;
+    transition-property: fill;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.section__context-like:hover .core {
+    fill: var(--red);
+    transition-delay: unset;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.section__context-like .main-body {
+    transition-property: fill;
+    fill: none;
+    transition-duration: 0.3s;
+}
+
+.section__context-like:hover .main-body {
+    fill: var(--red);
+    transition-delay: 0.05s;
+    transition-duration: 0.3s;
 }
 
 .section__context-btn {
@@ -55,10 +84,8 @@
     width: 130px;
 }
 
-.section__context-buttons:hover .section__context-btn {
-    color: var(--background);
+.section__context-btn:hover {
     box-shadow: inset 130px 0 0 0 var(--mainColor);
-    transition: box-shadow 500ms, color 500ms;
 }
 
 .section__paragraph {
