@@ -46,36 +46,72 @@
     gap: 12px;
 }
 
+.section__context-like {
+    overflow: visible;
+}
+
 .section__context-like .sparks {
     opacity: 0;
-    fill : var(--mainColor);
+    fill : var(--red);
 }
 
 .section__context-like .core {
     fill : none;
-    transition-property: fill;
-    transition-delay: 0.3s;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
+    stroke: none;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
 }
 
 .section__context-like:hover .core {
-    fill: var(--red);
-    transition-delay: unset;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
+    animation-name: none-to-main;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+.section__context-like:active .core,
+.section__context-like.is-liked .core {
+    animation-name: current-to-red;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
 }
 
 .section__context-like .main-body {
-    transition-property: fill;
+    stroke: none;
     fill: none;
-    transition-duration: 0.3s;
+    animation-duration: 0.3s;
 }
 
 .section__context-like:hover .main-body {
-    fill: var(--red);
-    transition-delay: 0.05s;
-    transition-duration: 0.3s;
+    animation-name: none-to-main;
+    animation-fill-mode: forwards;
+    animation-delay: 0.05s;
+    animation-duration: 0.3s;
+}
+
+.section__context-like:active .main-body,
+.section__context-like.is-liked .main-body {
+    animation-name: current-to-red;
+    animation-fill-mode: forwards;
+    animation-delay: 0.05s;
+    animation-duration: 0.3s;
+}
+
+.section__context-like.is-liked .contour {
+    animation-name: current-to-red;
+    animation-fill-mode: forwards;
+    animation-delay: 0.06s;
+    animation-duration: 0.3s;
+}
+
+.section__context-like.is-liked .heart {
+    animation: scale-heart 0.3s 0.06s ease-in;
+}
+
+.section__context-like.is-liked .sparks {
+    transition: opacity ease-in 0.3s 0.3s;
+    opacity: 1;
 }
 
 .section__context-btn {

@@ -31,6 +31,32 @@
     }
 }
 
-@keyframes like-hover {
+@keyframes current-to-red {
+    from {
+        fill : currentColor;
+    }
+    to {
+        fill: var(--red);
+    }
+}
 
+@keyframes none-to-main {
+    from {
+        fill : none;
+    }
+    to {
+        fill: var(--mainColor);
+    }
+}
+
+@keyframes scale-heart {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5) translate(-15%, -15%);
+    }
+    to {
+        transform: scale(1);
+    }
 }

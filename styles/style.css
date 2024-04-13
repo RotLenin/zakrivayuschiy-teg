@@ -63,3 +63,7 @@
 .block-width {
   width: min(100%, var(--max-width));
 }
+
+.dn {
+  display: none;
+}
