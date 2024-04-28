@@ -56,53 +56,62 @@
 }
 
 .section__context-like .core {
-    fill : none;
-    stroke: none;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
+    fill: var(--background);
+    transition: fill 0.3s linear;
 }
 
 .section__context-like:hover .core {
-    animation-name: none-to-main;
-    animation-fill-mode: forwards;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
+    fill: var(--mainColor);
+    transition: fill 0.3s linear;
 }
 
 .section__context-like:active .core,
 .section__context-like.is-liked .core {
-    animation-name: current-to-red;
+    fill: var(--red);
+    transition: fill 0.3s linear;
+    /*
     animation-fill-mode: forwards;
     animation-duration: 0.3s;
     animation-timing-function: linear;
+     */
 }
 
 .section__context-like .main-body {
-    stroke: none;
-    fill: none;
-    animation-duration: 0.3s;
+    fill: var(--background);
+    transition: fill 0.3s linear;
 }
 
 .section__context-like:hover .main-body {
-    animation-name: none-to-main;
-    animation-fill-mode: forwards;
-    animation-delay: 0.05s;
-    animation-duration: 0.3s;
+    fill: var(--mainColor);
+    transition: fill 0.3s 0.05s linear;
 }
 
 .section__context-like:active .main-body,
 .section__context-like.is-liked .main-body {
+    fill: var(--red);
+    transition: fill 0.3s linear;
+    /*
     animation-name: current-to-red;
     animation-fill-mode: forwards;
     animation-delay: 0.05s;
     animation-duration: 0.3s;
+     */
+}
+
+
+.section__context-like .contour {
+    fill : var(--mainColor)
 }
 
 .section__context-like.is-liked .contour {
+    fill: var(--red);
+    transition: fill 0.3s 0.06s linear;
+    /*
     animation-name: current-to-red;
     animation-fill-mode: forwards;
     animation-delay: 0.06s;
     animation-duration: 0.3s;
+     */
 }
 
 .section__context-like.is-liked .heart {
