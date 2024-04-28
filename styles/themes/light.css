@@ -1,0 +1,6 @@
+.page.theme_light {
+    --mainColor : var(--light-main-color);
+    --background : var(--light-bg-color);
+
+    --border: 2px solid var(--mainColor);
+}

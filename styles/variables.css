@@ -1,1 +1,43 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /** dark theme **/
+    --dark-main-color : #00CC14;
+    --dark-bg-color : #000;
+
+    /** light theme **/
+    --light-main-color : #000;
+    --light-bg-color : #fff;
+
+    /** like **/
+    --red : #FF0000;
+
+    /** fonts **/
+    --font-press-start : "Press Start 2P", sans-serif;
+    --font-inter : "Inter", sans-serif;
+
+    --fw-normal : 400;
+    --fw-bold : 700;
+
+    --font-size-s: 14px;
+    --font-line-s : normal;
+    --font-start-s: var(--font-size-s) / var(--font-line-s) var(--font-press-start);
+
+    --font-size-l: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --font-line-l : normal;
+    --font-start-l: var(--font-size-l) / var(--font-line-l) var(--font-press-start);
+
+    --font-size-xl: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --font-line-xl: normal;
+    --font-start-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-press-start);
+
+    --font-inter-size-s: 18px;
+    --font-inter-line-s: 21px;
+    --font-inter-s: var(--font-inter-size-s) / var(--font-inter-line-s) var(--font-inter);
+
+    --font-inter-size-l: 18px;
+    --font-inter-line-l: 21px;
+    --font-inter-l: var(--font-inter-size-l) / var(--font-inter-line-l) var(--font-inter);
+
+    /** sizes **/
+    --max-width: 700px;
+    --width: min(100%, var(--max-width));
+}

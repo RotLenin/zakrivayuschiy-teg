@@ -1,3 +1,8 @@
+@import "header.css";
+@import "section.css";
+@import "footer.css";
+
+
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -15,6 +20,50 @@
 */
 
 .page {
+  font-variation-settings : "wght" 465;
+  position: relative;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  gap: 50px;
+  background-color: var(--background);
+  background-size: 4px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.page, .page.theme_dark {
+  background-image: url("../svg/pattern-dark.svg");
+}
+
+.page.theme_light {
+  background-image: url("../svg/pattern-light.svg");
+}
+
+.button {
+  background: var(--background);
+  border: var(--border);
+}
+
+.button:focus-within {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--mainColor);
+}
+
+.button:hover {
+  color: var(--background);
+  box-shadow: inset 130px 0 0 0 var(--mainColor);
+  transition: box-shadow 500ms, color 500ms;
+}
+
+.block-width {
+  width: min(100%, var(--max-width));
+}
+
+.dn {
+  display: none;
 }

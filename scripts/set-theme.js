@@ -11,7 +11,7 @@ themeButtons.forEach((button) => {
 
 function changeTheme(theme) {
   document.body.className = 'page';
-  document.body.classList.add(`theme-${theme}`);
+  document.body.classList.add(`theme_${theme}`);
   setDisabled(theme);
   localStorage.setItem('theme', theme);
 }

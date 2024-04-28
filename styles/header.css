@@ -1,0 +1,111 @@
+.header {
+    padding: 25px 16px;
+    margin-bottom: 50px;
+    position: relative;
+    border: var(--border);
+    background-color: var(--background);
+    color: var(--mainColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* эта тема должна быть посередине, проще паддинга сложно что то придумать */
+.header__logo-group {
+    padding-top: 98px;
+}
+
+.header__title {
+    font: var(--font-start-xl);
+    line-height: 78%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header__title a {
+    text-decoration: none;
+}
+
+.header__subtitle {
+    font: var(--font-start-l);
+}
+
+.header__theme-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.theme-menu__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-menu__button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font: var(--font-start-s);
+    color: inherit;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    transition: opacity 500ms;
+}
+
+.theme-menu__button::before {
+    position: relative;
+    content: '▶';
+    opacity: 0;
+    color: var(--mainColor);
+    animation: arrow-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+.theme-menu__button::after {
+    overflow: hidden;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--mainColor);
+    opacity: 0;
+    transition: opacity 500ms, transform 500ms;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.theme-menu__button:focus,
+.theme-menu__button:active,
+.theme-menu__button:focus-within,
+.theme-menu__button:hover,
+.theme-menu__button:focus::before,
+.theme-menu__button:active::before,
+.theme-menu__button:focus-within::before,
+.theme-menu__button[disabled]::before {
+    opacity: .5;
+}
+
+.theme-menu__button:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.theme-menu__button:focus-within {
+    outline: none;
+}
